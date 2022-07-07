@@ -1,0 +1,16 @@
+body{
+    background: rgb(11, 178, 239);
+}
+div{
+    margin: 4px;
+    padding: 40px;
+    position: relative;
+}
+input{
+    color: bisque;
+    font-style: bold;
+
+}
+h2{
+    margin-left: 66PX;
+}
