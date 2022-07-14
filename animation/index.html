@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>transiction effect in css</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+      background-color: blueviolet;
+      border: 3px solid green;
+      width: 100%;
+      height: 100vh;
+    }
+    .dox {
+      width: 200px;
+      position: relative;
+      height: 100px;
+      background-color: blue;
+      animation-name: gayu;
+      animation-duration: 5s;
+      animation-iteration-count: 3;
+      animation-fill-mode: backwards;
+      animation-timing-function: ease-in;
+    }
+    @keyframes gayu {
+      from {
+        width: 200px;
+        height: 400px;
+      }
+      to {
+        height: 100px;
+        width: 400px;
+      }
+    }
+    @keyframes gayu {
+      0% {
+        top: 60px;
+        width: 200px;
+      }
+      50% {
+        left: 50px;
+        width: 250px;
+      }
+      100% {
+        top: 50px;
+        width: 300px;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="dox">hi i am a box</div>
+    </div>
+  </body>
+</html>
